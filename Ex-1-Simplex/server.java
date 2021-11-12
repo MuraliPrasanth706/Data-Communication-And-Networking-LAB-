@@ -6,7 +6,7 @@ public class server {
             ServerSocket ss=new ServerSocket(5000);
             Socket s=ss.accept();
             DataOutputStream output = new DataOutputStream(s.getOutputStream());
-            String str = "I am Billa(Hangover)";
+            String str = "I am ";
             output.writeUTF(str);
             output.flush();
             output.close();
